@@ -1,5 +1,17 @@
+.hide{
+    display: none;
+}
+
+.show-menu{
+    display: flex;
+    transform: translateY(0);
+    transition: transform 0.7s;
+}
+
 .header{
- 
+    position: relative;
+    z-index: 5;
+
     & .info{
         @include flex_inline;
 
@@ -10,7 +22,7 @@
 
         &.info>div{
             @include flex_inline;
-
+  
             & .info-logo{
                 font-size: 28px;
                 font-weight: bold;
@@ -27,8 +39,7 @@
 
             & .info-search{
                 border-bottom: 1px solid $menu-bg-color;
-                width: 281px;
-                margin-right: 86px;
+                max-width: 281px;
                 padding-bottom: 1px;
                 overflow: hidden;
 
@@ -62,6 +73,9 @@
             &:hover{
                 @include hover;
             }
+        }
+        & .shopping-cart{
+            display: none
         }     
     }  
     & .menu{
@@ -86,6 +100,7 @@
                 }
             }
         }
+        
         & .shopping-cart {
             @include flex_center;
             

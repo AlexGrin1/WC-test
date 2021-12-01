@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import 'constants';
 @import 'mixins';
+@import 'burger-menu';
 @import 'components';
+
 
 *{
   margin: 0;
@@ -9,7 +11,48 @@
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
 }
+
 body {
     margin: 0 auto;
     max-width: 1300px;
+    path{ fill:inherit; stroke:inherit; }
 }
+
+
+@media (max-width: 1024px) {
+    .header{
+
+        & .info{
+        padding: 26px 20px 26px 86px;
+        
+        & .shopping-cart{
+            display: block;
+            width: 21px;
+            height: 20px;
+        }
+        & .burger-logo{
+            display: block;
+        } 
+
+            &.info>div{
+
+                & .info-search{
+                    width: 100%;
+                    max-width: 697px;
+                    
+                    & input {
+                    
+                    }
+                }
+            }
+        }
+    }
+    
+     
+    .header .menu,.header .info .info-contact,.header .info .delivery-and-pay{
+        display: none;
+    }
+   
+}
+@media screen and (max-width: 770px) {}
+@media screen and (max-width: 400px) {}

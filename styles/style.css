@@ -1,4 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+.burger-logo {
+  display: none;
+  position: absolute;
+  left: 24px;
+  width: 24px;
+}
+.burger-logo:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: #FBFF3D;
+  border-color: #FBFF3D;
+  filter: invert(470%) sepia(230%) contrast(13%);
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+  z-index: -10;
+  padding: 24px 36px;
+  color: #ffffff;
+  background-color: #265C9A;
+  transform: translateY(-400px);
+}
+.burger-menu ul {
+  list-style-type: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.burger-menu ul li {
+  padding: 10px 16px 9px 16px;
+}
+.burger-menu ul li:hover {
+  cursor: pointer;
+  background-color: #618CBF;
+}
+
+.hide {
+  display: none;
+}
+
+.show-menu {
+  display: flex;
+  transform: translateY(0);
+  transition: transform 0.7s;
+}
+
+.header {
+  position: relative;
+  z-index: 5;
+}
 .header .info {
   display: flex;
   justify-content: space-between;
@@ -27,8 +81,7 @@
 }
 .header .info.info > div .info-search {
   border-bottom: 1px solid #517DAE;
-  width: 281px;
-  margin-right: 86px;
+  max-width: 281px;
   padding-bottom: 1px;
   overflow: hidden;
 }
@@ -60,6 +113,9 @@
   cursor: pointer;
   color: #FBFF3D;
   border-color: #FBFF3D;
+}
+.header .info .shopping-cart {
+  display: none;
 }
 .header .menu {
   display: flex;
@@ -113,6 +169,31 @@
 body {
   margin: 0 auto;
   max-width: 1300px;
+}
+body path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+@media (max-width: 1024px) {
+  .header .info {
+    padding: 26px 20px 26px 86px;
+  }
+  .header .info .shopping-cart {
+    display: block;
+    width: 21px;
+    height: 20px;
+  }
+  .header .info .burger-logo {
+    display: block;
+  }
+  .header .info.info > div .info-search {
+    width: 100%;
+    max-width: 697px;
+  }
+  .header .menu, .header .info .info-contact, .header .info .delivery-and-pay {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
