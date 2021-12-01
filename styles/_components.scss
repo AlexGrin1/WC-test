@@ -1,0 +1,100 @@
+.header{
+ 
+    & .info{
+        @include flex_inline;
+
+        width: 100%;
+        height: 73px;
+        padding: 21px 85px 16px 86px;
+        background-color: $header-bg-color;
+
+        &.info>div{
+            @include flex_inline;
+
+            & .info-logo{
+                font-size: 28px;
+                font-weight: bold;
+                color: $text-clor-light;
+                margin-right: 86px;
+            }
+
+            & .info-contact {
+                font-size: 19px;
+                margin-right: 86px;
+                color: $text-clor-light;
+                text-decoration: none;
+            }
+
+            & .info-search{
+                border-bottom: 1px solid $menu-bg-color;
+                width: 281px;
+                margin-right: 86px;
+                padding-bottom: 1px;
+                overflow: hidden;
+
+                & img{
+                    margin-right: 7px;
+                    width: 13px;
+                    height: 13px;
+                }
+
+                & input{
+                    border: none;
+                    list-style-type: none;
+                    outline: none;
+                    background: none;
+                    color: $text-clor-light;
+                    width: 250px;
+
+                    &::placeholder{
+                        font-size: 16px;
+                        color: $text-clor-light;
+                    }
+                }
+            }         
+        }
+
+        & .delivery-and-pay{
+            font-size: 16px;
+            color: $text-clor-light;
+            text-decoration: none;
+            border-bottom: 1.5px solid $text-clor-light;
+            &:hover{
+                @include hover;
+            }
+        }     
+    }  
+    & .menu{
+        
+        @include flex_inline;
+        height: 46px;
+        background-color: $menu-bg-color;
+        color: $text-clor-light;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding:  0 86px  ;
+
+        & ul{
+            @include flex_inline;
+
+            list-style-type: none;
+            font-weight: bold;
+            & li {
+                margin-right: 39px;
+                &:hover{
+                    @include hover;
+                }
+            }
+        }
+        & .shopping-cart {
+            @include flex_center;
+            
+            & img {
+                margin-right:9px;
+            }
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+}

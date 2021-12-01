@@ -1,0 +1,18 @@
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin  hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: $hover-color;
+    border-color: $hover-color
+}
