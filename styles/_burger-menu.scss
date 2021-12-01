@@ -11,7 +11,8 @@
 .burger-menu{
     @include flex-column-left;
 
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: -10;
     padding: 24px 36px;
     color: $text-clor-light;

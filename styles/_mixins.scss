@@ -9,7 +9,11 @@
     justify-content: center;
     align-items: left;
   }
-
+  @mixin flex-row-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
 @mixin flex_inline {
   display: flex;
   justify-content: space-between;

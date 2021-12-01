@@ -113,3 +113,54 @@
         }
     }
 }
+
+main{
+    padding: 21px 85px 16px 86px;
+
+    & .filter{
+        @include flex-row-left;
+    
+        & .choice-type,.choice-model{
+            margin-right: 14px;
+            font-size: 16px;
+            width: 264px;
+	        height: 48px;
+	        padding: 14px 17px;
+	        -webkit-appearance : none;
+	        background-image   : url('../assets/arrow-down.svg');
+	        background-position: right 16px center;
+	        background-repeat  : no-repeat;
+            -moz-appearance    : none;
+	        text-overflow      : '';
+            -ms-appearance     : none;
+	        appearance         : none !important;
+	        border-color: $border-color; 
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        & .filter-price {
+            text-align: center;
+            & label {
+                width: 134px;
+                height: 48px;
+                padding: 14px 17px; 
+                border: 1px solid $border-color;
+            }
+            & input {
+                font-size: 16px;
+                font-weight: bold;
+                text-align: right;
+                outline: none;
+                border: none;          
+            }
+            & input[type="number"]::-webkit-outer-spin-button,
+            & input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+}
+

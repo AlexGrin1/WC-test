@@ -47,7 +47,34 @@
         </div>
     </header>
     <main>
-        <div class="filter"></div>
+        <div class="filter">
+            <select class="choice-type">
+                <option value="любого логотипа">Любого логотипа</option>
+                <option value="компакт-камера">Компакт-камера</option>
+                <option value="беззеркальная">Беззеркальная</option>
+                <option value="зеркальная">Зеркальная</option>
+                <option value="среднеформатная">Среднеформатная</option>  
+            </select>
+            <select class="choice-model">
+                <option value="canon">Canon</option>
+                <option value="nikon">Nikon</option>
+                <option value="sony">Sony</option>
+                <option value="fujifilm">Fujifilm</option>
+                <option value="samsung">Samsung</option>  
+                <option value="olympus">Olympus</option>  
+            </select>
+
+            <div class="filter-price">По цене
+                <label for="price1">
+                    от
+                    <input id='price1' type="number"  value="500000" min="0" max="1000000000">
+                </label>
+                <label for="price2">
+                    до
+                    <input id='price2' type="number"  value="25000000" min="0" max="1000000000">
+                </label>
+            </div>
+        </div>
         <section class="content"></section>
     </main>
     <script src="./js/index.js"></script>

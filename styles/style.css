@@ -18,7 +18,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: -10;
   padding: 24px 36px;
   color: #ffffff;
@@ -157,6 +158,54 @@
   cursor: pointer;
   color: #FBFF3D;
   border-color: #FBFF3D;
+}
+
+main {
+  padding: 21px 85px 16px 86px;
+}
+main .filter {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+main .filter .choice-type, main .filter .choice-model {
+  margin-right: 14px;
+  font-size: 16px;
+  width: 264px;
+  height: 48px;
+  padding: 14px 17px;
+  -webkit-appearance: none;
+  background-image: url("../assets/arrow-down.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  -moz-appearance: none;
+  text-overflow: "";
+  -ms-appearance: none;
+  appearance: none !important;
+  border-color: #D0D0D0;
+}
+main .filter .choice-type:hover, main .filter .choice-model:hover {
+  cursor: pointer;
+}
+main .filter .filter-price {
+  text-align: center;
+}
+main .filter .filter-price label {
+  width: 134px;
+  height: 48px;
+  padding: 14px 17px;
+  border: 1px solid #D0D0D0;
+}
+main .filter .filter-price input {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  outline: none;
+  border: none;
+}
+main .filter .filter-price input[type=number]::-webkit-outer-spin-button, main .filter .filter-price input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 * {
