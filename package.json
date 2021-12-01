@@ -1,0 +1,22 @@
+{
+  "name": "webc-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch styles/main.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGrin1/WebC-test.git"
+  },
+  "author": "Alexander Hrynevich a_grynevich@mail.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGrin1/WebC-test/issues"
+  },
+  "homepage": "https://github.com/AlexGrin1/WebC-test#readme",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
+}
