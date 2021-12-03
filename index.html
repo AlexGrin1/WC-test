@@ -47,6 +47,7 @@
         </div>
     </header>
     <main>
+        <img class="filter-icon" src="./assets/filter-icon.png" alt="">
         <div class="filter">
             <select class="choice-type">
                 <option value="любого логотипа">Любого логотипа</option>
@@ -64,7 +65,8 @@
                 <option value="olympus">Olympus</option>  
             </select>
 
-            <div class="filter-price">По цене
+            <div class="filter-price">
+                <span>По цене</span> 
                 <label for="price1">
                     от
                     <input id='price1' type="number"  value="500000" min="0" max="1000000000">
@@ -73,9 +75,45 @@
                     до
                     <input id='price2' type="number"  value="25000000" min="0" max="1000000000">
                 </label>
+                <span>рублей</span> 
             </div>
         </div>
-        <section class="content"></section>
+
+        <section class="content">
+            <div class="main-product">
+                <img src="./assets/image 2.png" alt="">
+                <div>
+                    <div class="product-info">
+                        <div class="product-info__title">Canon EOS 5D Mark III Body</div>
+                        <div class="product-info__describtion">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей профессиональных фотографов и видеооператоров. Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3 Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+, 61-точечный автофокус.</div>
+                    </div>
+                    <div class="product-price">
+                        <div class="price-old">4 400,00 руб.</div>
+                        <div class="line_red"></div>
+                        <div class="price-new">
+                            <div>3 200,00 <span>руб.</span></div>
+                            <img src="./assets/shopping-cart_red.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/image 2.png" alt="">
+                
+                    <div class="product-info">
+                        <div class="product-info__title">Canon EOS 5D Mark III Body</div>
+                        <div class="product-info__describtion">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</div>
+                    </div>
+                    <div class="product-price">         
+                        <div class="line_standart"></div>
+                        <div class="price">
+                            <div>3 200,00 <span>руб.</span></div>
+                            <img src="./assets/shopping-cart.svg" alt=""/>
+                        </div>
+                    </div>
+               
+            </div>
+        </section>
     </main>
     <script src="./js/index.js"></script>
 </body>

@@ -52,7 +52,14 @@ body {
     .header .menu,.header .info .info-contact,.header .info .delivery-and-pay{
         display: none;
     }
-   
+   main{
+    & .filter-icon{
+        display: block;
+    }
+    & .filter{
+        display: none;
+    }
+   }
 }
 @media screen and (max-width: 770px) {}
 @media screen and (max-width: 400px) {}
