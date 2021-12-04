@@ -127,7 +127,10 @@
 
 main{
     position: relative;
-    padding: 21px 85px 16px 86px;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-top: 21px;
+    // padding: 21px auto 16px auto;
     & .filter-icon{
         display: none;
         position: absolute;
@@ -191,6 +194,7 @@ main{
     & .content{
         margin-top: 23px;
         display: flex;
+        flex-wrap: wrap; 
         & .main-product{
            display: flex;
            align-items: flex-start;
@@ -200,8 +204,12 @@ main{
            max-width: 564px;
            min-height: 358px;
            height: fit-content;
-          
            border: 1px solid gray;
+           &:hover{
+               cursor: pointer;
+               transition: 0.1s;
+               background-color: #FFF1F1;
+           }
            & img {
                width: 250px;
                height: 250px;
@@ -212,7 +220,7 @@ main{
                    font-size: 20px;
                    font-weight: bold;
                    margin-top: 10px;
-
+                   
                }
                & .product-info__describtion{
                 font-size: 16px;
@@ -246,9 +254,13 @@ main{
             width: fit-content;
             max-width: 282px;
             height: 358px;
-            
             border: 1px solid gray;
             padding: 21px 22px 14px 22px ;
+            &:hover{
+                cursor: pointer;
+                transition: 0.1s;
+                background-color: #E8EEFF;
+            }
             & img {
                 margin: 0 auto;
                 width: 160px;

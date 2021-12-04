@@ -174,7 +174,9 @@
 
 main {
   position: relative;
-  padding: 21px 85px 16px 86px;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding-top: 21px;
 }
 main .filter-icon {
   display: none;
@@ -231,6 +233,7 @@ main .filter .filter-price input[type=number]::-webkit-outer-spin-button, main .
 main .content {
   margin-top: 23px;
   display: flex;
+  flex-wrap: wrap;
 }
 main .content .main-product {
   display: flex;
@@ -242,6 +245,11 @@ main .content .main-product {
   min-height: 358px;
   height: fit-content;
   border: 1px solid gray;
+}
+main .content .main-product:hover {
+  cursor: pointer;
+  transition: 0.1s;
+  background-color: #FFF1F1;
 }
 main .content .main-product img {
   width: 250px;
@@ -288,6 +296,11 @@ main .content .product-card {
   height: 358px;
   border: 1px solid gray;
   padding: 21px 22px 14px 22px;
+}
+main .content .product-card:hover {
+  cursor: pointer;
+  transition: 0.1s;
+  background-color: #E8EEFF;
 }
 main .content .product-card img {
   margin: 0 auto;
@@ -340,7 +353,7 @@ body path {
   stroke: inherit;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1050px) {
   .header .info {
     padding: 26px 20px 26px 86px;
   }
@@ -356,6 +369,7 @@ body path {
     width: 100%;
     max-width: 697px;
   }
+
   .header .menu, .header .info .info-contact, .header .info .delivery-and-pay {
     display: none;
   }
@@ -365,6 +379,28 @@ body path {
   }
   main .filter {
     display: none;
+  }
+  main .content .main-product {
+    max-width: 656px;
+    min-height: 359px;
+  }
+  main .content .main-product img {
+    width: 297px;
+    height: 297px;
+  }
+  main .content .product-card {
+    max-width: 328px;
+    height: 359px;
+  }
+}
+@media screen and (max-width: 770px) {
+  main .content .main-product {
+    max-width: 728px;
+    min-height: 364px;
+  }
+  main .content .product-card {
+    max-width: 364px;
+    height: 364px;
   }
 }
 
